@@ -1,0 +1,77 @@
+section {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap:5px;
+    width:50%;
+    margin-bottom: 20vh;
+}
+.box1{
+background-color: red;
+border-radius: 5px;
+grid-column:1/3;
+padding:5%;
+
+}
+.box2{
+    background-color: blue; 
+    border-radius: 5px;
+    grid-column: 3/5;
+    padding:5%;
+}
+.box3{
+    background-color: green;
+    border-radius: 5px;
+    padding:5%;
+}
+.box4{
+    background-color: purple; 
+    border-radius: 5px;
+    grid-column: 2/5;
+    padding:5%;
+}
+.box5{
+    background-color: yellow; 
+    border-radius: 5px;
+    grid-column:1/5;
+    padding:5%;
+}
+
+/* ############################ Übung 2 ########################### */
+article{
+    width:50%;
+display:grid;
+grid-template-columns: repeat (4, 1fr);
+grid-template-rows: repeat(6, 100px);
+gap:5px;
+grid-template-areas:"Dean Dean Dean Dean"
+"Dean Dean Dean Dean"
+"Sam Sam Castiel Castiel"
+"Sam Sam  Castiel Castiel"
+"Sam Sam Crowley Rowena"
+"Sam Sam Crowley Rowena"
+ ;
+}
+.winchester1{
+    grid-area: Dean ;
+    background-color: crimson;
+}
+
+.winchester2{
+    grid-area: Sam ;
+    background-color: cornflowerblue;
+}
+.winchester3{
+    grid-area: Castiel;
+    background-color: darkgreen;
+}
+
+.winchester4{
+    grid-area: Crowley;
+    background-color: darkorange;
+}
+.winchester5{
+    grid-area: Rowena;
+    background-color: rgb(113, 18, 151);
+   
+}
